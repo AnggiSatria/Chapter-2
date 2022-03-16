@@ -23,6 +23,7 @@ app.get('/Contact', function(req, res){s
 app.post('/Contact', function(req, res){
     let data2 = req.body;
     console.log(data2);
+    
 });
 
 app.get('/myProject', function(req, res){

@@ -1,0 +1,85 @@
+nav {
+    display: flex;
+    height: 7vh;
+    background-color: rgb(202, 202, 202);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(212, 212, 214);
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav .Left-Bar {
+    display: flex;
+    flex: 50%;
+}
+
+.list {
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav .Right-Bar {
+    display: flex;
+    justify-content: flex-end;
+    flex: 50%;
+}
+
+.Right-Bar a{
+    background-color: black;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding-top: 5px;
+}
+
+.Card {
+    box-shadow:2px 1px black; 
+    border-radius: 10px; 
+    margin-top:50px; 
+    margin-right:auto; 
+    margin-left: auto; 
+    display: flex; 
+    width: 900px; 
+    background-color: white; 
+    padding: 20px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+}
+
+.right-side {
+    display: flex;
+    justify-content: flex-end;
+    flex: 50%;
+}
+
+.Button {
+    display: flex;
+}

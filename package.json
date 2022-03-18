@@ -14,5 +14,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnggiSatria/Chapter-2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnggiSatria/Chapter-2/issues"
+  },
+  "homepage": "https://github.com/AnggiSatria/Chapter-2#readme"
 }

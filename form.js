@@ -38,6 +38,8 @@ function addProject(){
     renderProject()
 }
 
+console.log(projects)
+
 function renderProject(){
     let projectContainer = document.getElementById('Card')
 
@@ -119,101 +121,4 @@ function renderProject(){
     }
     
     
-}
-
-let month = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-]
-
-function getFullTime(time){
-    
-    
-    
-    let date = time.getDate()
-    let monthIndex = time.getMonth()
-    let year = time.getFullYear()
-    let hours = time.getHours()
-    let minutes = time.getMinutes()
-
-    let fullTime = `${date} ${month[monthIndex]} ${year} ${hours}:${minutes} WIB`
-
-    return fullTime
-}
-
-function getDistanceTime(){
-
-    let startTime = projects[i].date
-    console.log(startTime)
-    let endTime = projects[i].date2
-    console.log(endTime)
-
-    // let timeNow = new Date()
-    // let timeBlog = new Date(time)
-
-    // console.log('Now: ', timeNow)  
-    // console.log('Blog: ', timeBlog)
-
-    let distance = new Date(endTime) - new Date(startTime) // milliseconds 
-    console.log(distance)
-
-    let dayDistance = Math.floor(distance/( 23 * 60 * 60 * 1000 )) // convert to day 
-
-    if(dayDistance != 0){
-        return dayDistance + ' Days Ago'
-    }else{
-        let hourDistance = Math.floor(distance/( 60 * 60 * 1000 ))
-
-        if(hourDistance != 0){
-            return hourDistance + ' Hours Ago'
-        }else{
-            let minuteDistance = Math.floor(distance/(60 * 1000))
-
-            if(minuteDistance != 0){
-                 return minuteDistance + ' Minutes Ago'
-            }else{
-                let secondDistance = Math.floor(distance/1000)
-                return secondDistance + ' Second Ago'
-            }
-           
-        }
-        
-    }
-    
-}
-
-setInterval(function(){
-    renderProject()
-}, 1000)
-
-function addCheckBox(nodeJs2, reactJs2, nextJs2, typesScript2){
-    let tech = ""
-
-     if(nodeJs2 == true){
-        tech += '<img src ="image/node2.jpg"/>'
-    }
-
-    if(reactJs2 == true){
-        tech += '<img src ="image/react-removebg-preview.png"/>'
-    } 
-
-    if(nextJs2 == true){
-        tech += '<img src ="image/nextJs-removebg-preview.png"/>'
-    }
-
-    if(typesScript2 == true){
-        tech += '<img src ="image/ts-removebg-preview.png"/>'
-    } 
-
-    return tech
 }
